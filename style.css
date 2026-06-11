@@ -223,40 +223,71 @@ main{
 }
 
 .hero-section{
-    position: relative;
+     position:relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     width:90%;
-    height: 600px;
-    margin: 0 auto;
+    height:600px;
+    margin: 0 auto;   
     background-image:url(71QcgptqadL._SX3000_.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.overlay{
-    position:absolute;
-    width:100%;
-    height:250px;
+
+
+.hero-section::after{
+    content:"";
+    position: absolute;
+    left: 0;
     bottom:0;
-    left:0;
-    background: linear-gradient(transparent,#e3e6e6);
+    height:200px;
+    width:90%;
+    background:linear-gradient(transparent,#e3e6e6);
 }
+
+
+
+ /* .img1{
+   width:90%;
+    height: 600px;
+    
+    margin: 0 auto;
+}  */
+
+/* .img2{
+     width:90%;
+    height: 600px;
+     margin: 0 auto; 
+    background-image: url("kitchen banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .img3{
+     margin: 0 auto;
+    background-image: url(toybanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}  */
+
+
+
 
 .content{
     color: #0F1111;
     height:40px; 
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color:  rgb(255, 255, 255);
     width: 90%;
     font-size: 0.85rem;
-    margin-bottom: 250px;
+    margin-bottom: 1000px;
 }
 
 .content a{
@@ -265,16 +296,15 @@ main{
 
 .Shop-section{
     position: relative;
-    margin-top: -250px;
+    top: -250px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #e3e6e6;
     width: 90%;
     margin: 0 auto;
 }
 
-.box{ 
+.box{   
     margin-top: 20px;
     padding-top: 20px;
     border: 2px solid white;
@@ -433,8 +463,8 @@ main{
 .box9{
     padding-bottom: 10px;
     /* padding-left: 12px; */
-    height:250px;
-    width: 100%;
+    height:270px;
+    width: 95%;
     text-align: center;
 }
 
@@ -447,7 +477,7 @@ main{
 .box9 p{
     text-align: left;
     padding-bottom: 10px;
-    margin-left: 12px;
+    margin-left: 10px;
     color:#007185;
 }
 
